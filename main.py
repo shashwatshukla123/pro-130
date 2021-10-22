@@ -1,11 +1,11 @@
 import pandas as pd
 
 df = pd.read_csv("final.csv")
-# Listing all columns
+# Listing all columns.
 print(df.head(5))
 
 #Deleting the file
 del df["Luminosity"]
 
-print(list(df))
+# Creating new file.
 df.to_csv('main.csv') 
